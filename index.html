@@ -1,147 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Join TRADE WITH SUNIL</title>
-  <meta name="description" content="Join our high-accuracy stock/forex tips Telegram channel. Limited spots. 100% free demo.">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inner Circle Community</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-      animation: fadeIn 1s ease-in;
-    }
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '997082656194064');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=997082656194064&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#FFFFFF;
+  color:#1A1D21;
+  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow-x:hidden;
+  position:relative;
+}
+a{text-decoration:none;color:inherit;}
 
-    .container {
-      background: #1a1a1a;
-      padding: 30px 20px;
-      max-width: 420px;
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,255,150,0.2);
-      text-align: center;
-      animation: fadeUp 1s ease-out;
-    }
+/* ===== BACKGROUND ANIMATIONS ===== */
+.blob{
+  position:fixed;border-radius:50%;
+  filter:blur(80px);opacity:.3;
+  pointer-events:none;z-index:0;
+}
+.blob-1{
+  width:420px;height:420px;
+  background:radial-gradient(circle,rgba(201,162,39,.28),transparent 70%);
+  top:-10%;left:-8%;
+  animation:blobA 18s ease-in-out infinite alternate;
+}
+.blob-2{
+  width:350px;height:350px;
+  background:radial-gradient(circle,rgba(41,169,235,.22),transparent 70%);
+  bottom:-8%;right:-6%;
+  animation:blobB 22s ease-in-out infinite alternate;
+}
+.blob-3{
+  width:280px;height:280px;
+  background:radial-gradient(circle,rgba(201,162,39,.12),transparent 70%);
+  top:50%;right:10%;
+  animation:blobC 15s ease-in-out infinite alternate;
+}
+@keyframes blobA{to{transform:translate(100px,80px) scale(1.15);}}
+@keyframes blobB{to{transform:translate(-80px,-60px) scale(1.1);}}
+@keyframes blobC{to{transform:translate(-60px,40px) scale(.9);}}
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.grid-dots{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:radial-gradient(circle,rgba(0,0,0,.05) 1px,transparent 1px);
+  background-size:32px 32px;
+  animation:gridShift 20s linear infinite;
+}
+@keyframes gridShift{
+  0%{background-position:0 0;}
+  100%{background-position:32px 32px;}
+}
 
-    .logo {
-      width: 100px;
-      margin-bottom: 20px;
-      border-radius: 50%;
-      border: 2px solid #00ffaa;
-    }
+.shapes{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.shape{
+  position:absolute;
+  border:1.5px solid rgba(201,162,39,.12);
+  animation:floatShape linear infinite;
+}
+.shape:nth-child(1){width:18px;height:18px;top:12%;left:8%;animation-duration:14s;border-radius:4px;}
+.shape:nth-child(2){width:12px;height:12px;top:25%;right:15%;animation-duration:18s;animation-delay:-4s;border-color:rgba(41,169,235,.1);border-radius:50%;}
+.shape:nth-child(3){width:22px;height:22px;bottom:20%;left:18%;animation-duration:16s;animation-delay:-7s;border-radius:4px;transform:rotate(45deg);}
+.shape:nth-child(4){width:10px;height:10px;top:60%;right:10%;animation-duration:20s;animation-delay:-2s;border-color:rgba(201,162,39,.08);border-radius:50%;}
+.shape:nth-child(5){width:16px;height:16px;bottom:35%;right:25%;animation-duration:13s;animation-delay:-9s;border-radius:4px;}
+.shape:nth-child(6){width:8px;height:8px;top:8%;right:35%;animation-duration:22s;animation-delay:-5s;border-color:rgba(41,169,235,.08);border-radius:50%;}
 
-    h1 {
-      font-size: 1.6rem;
-      color: #00ffaa;
-      margin-bottom: 10px;
-    }
+@keyframes floatShape{
+  0%{transform:translateY(0) rotate(0deg);opacity:0;}
+  10%{opacity:1;}
+  90%{opacity:1;}
+  100%{transform:translateY(-120vh) rotate(360deg);opacity:0;}
+}
 
-    .section-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #00ffaa;
-      margin: 20px 0 10px;
-    }
+.lines{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.line-anim{
+  position:absolute;width:1px;
+  background:linear-gradient(to bottom,transparent,rgba(201,162,39,.06),transparent);
+  animation:lineFall linear infinite;
+}
+.line-anim:nth-child(1){height:180px;left:15%;animation-duration:8s;}
+.line-anim:nth-child(2){height:140px;left:40%;animation-duration:10s;animation-delay:-3s;background:linear-gradient(to bottom,transparent,rgba(41,169,235,.05),transparent);}
+.line-anim:nth-child(3){height:200px;left:70%;animation-duration:9s;animation-delay:-6s;}
+.line-anim:nth-child(4){height:120px;left:88%;animation-duration:11s;animation-delay:-2s;background:linear-gradient(to bottom,transparent,rgba(41,169,235,.05),transparent);}
+.line-anim:nth-child(5){height:160px;left:28%;animation-duration:7s;animation-delay:-4s;}
 
-    .benefit-text {
-      font-size: 0.95rem;
-      margin: 6px 0;
-      color: #ddd;
-    }
+@keyframes lineFall{
+  0%{top:-220px;opacity:0;}
+  10%{opacity:1;}
+  90%{opacity:1;}
+  100%{top:110vh;opacity:0;}
+}
 
-    p {
-      font-size: 1rem;
-      margin: 10px 0 20px;
-    }
+/* ===== MAIN CONTENT ===== */
+.center{
+  position:relative;z-index:2;
+  text-align:center;
+  padding:40px 24px;
+  max-width:520px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  animation:fadeUp .8s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
 
-    .cta-btn {
-      background-color: #00ffaa;
-      color: #000;
-      border: none;
-      padding: 14px 28px;
-      font-size: 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      animation: pulse 1.6s infinite;
-      transition: transform 0.3s ease;
-      margin-top: 20px;
-    }
+/* Brand Logo — centered */
+.brand-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:36px;
+  animation:logoPop .7s .15s cubic-bezier(.34,1.56,.64,1) both;
+  position:relative;
+}
+@keyframes logoPop{
+  from{opacity:0;transform:scale(.5);}
+  to{opacity:1;transform:scale(1);}
+}
 
-    .cta-btn:hover {
-      transform: scale(1.05);
-    }
+/* Rotating ring behind logo */
+.brand-logo::before{
+  content:'';position:absolute;
+  width:110px;height:110px;border-radius:24px;
+  background:conic-gradient(from 0deg,rgba(201,162,39,.4),rgba(41,169,235,.3),transparent,rgba(201,162,39,.4));
+  animation:ringRotate 6s linear infinite;
+  z-index:0;
+}
+@keyframes ringRotate{to{transform:rotate(360deg);}}
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0, 255, 170, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(0, 255, 170, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(0, 255, 170, 0); }
-    }
+/* Outer pulse ring */
+.brand-logo::after{
+  content:'';position:absolute;
+  width:130px;height:130px;border-radius:30px;
+  border:1px solid rgba(201,162,39,.1);
+  animation:pulseRing 3s ease-in-out infinite;
+  z-index:0;
+}
+@keyframes pulseRing{
+  0%,100%{transform:scale(1);opacity:.4;}
+  50%{transform:scale(1.08);opacity:0;}
+}
 
-    .countdown {
-      font-size: 0.95rem;
-      margin-top: 15px;
-      color: #ffcc00;
-    }
+.brand-logo img{
+  position:relative;z-index:1;
+  width:90px;height:90px;
+  border-radius:22px;
+  object-fit:cover;
+  border:3px solid #FFFFFF;
+  box-shadow:0 8px 32px rgba(201,162,39,.15),0 2px 8px rgba(0,0,0,.06);
+  background:#F5F0E1;
+}
+.brand-logo .logo-fallback{
+  position:relative;z-index:1;
+  width:90px;height:90px;
+  border-radius:22px;
+  background:linear-gradient(135deg,#C9A227,#A6841A);
+  display:none;
+  align-items:center;justify-content:center;
+  font-weight:900;font-size:28px;color:#fff;
+  border:3px solid #FFFFFF;
+  box-shadow:0 8px 32px rgba(201,162,39,.15),0 2px 8px rgba(0,0,0,.06);
+}
 
-    .disclaimer {
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 20px;
-    }
-  </style>
+.center h1{
+  font-size:clamp(28px,7vw,42px);
+  font-weight:900;
+  line-height:1.15;
+  letter-spacing:-0.03em;
+  margin-bottom:14px;
+  color:#1A1D21;
+}
+.center h1 span{
+  color:#C9A227;
+  position:relative;
+}
+.center h1 span::after{
+  content:'';position:absolute;
+  bottom:2px;left:0;right:0;height:3px;
+  background:#C9A227;border-radius:2px;
+  opacity:.25;
+}
+
+.center p{
+  color:#6B7280;
+  font-size:clamp(14px,3.5vw,16px);
+  line-height:1.6;
+  margin-bottom:44px;
+  max-width:400px;
+}
+
+.ctas{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 28px;border-radius:12px;
+  font-weight:700;font-size:15px;
+  transition:transform .15s,box-shadow .15s;
+  cursor:pointer;position:relative;overflow:hidden;
+}
+.btn:active{transform:scale(.97);}
+
+.btn img.logo-icon{
+  width:22px;height:22px;
+  border-radius:5px;
+  object-fit:contain;
+  flex-shrink:0;
+  filter:brightness(0) invert(1);
+}
+
+.btn-tg{
+  background:#29A9EB;color:#fff;
+  box-shadow:0 4px 24px rgba(41,169,235,.3),0 0 0 1px rgba(41,169,235,.1);
+}
+.btn-tg:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 36px rgba(41,169,235,.4),0 0 0 1px rgba(41,169,235,.15);
+}
+
+.btn-yt{
+  background:#FF0000;color:#fff;
+  box-shadow:0 4px 24px rgba(255,0,0,.25),0 0 0 1px rgba(255,0,0,.08);
+}
+.btn-yt:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 36px rgba(255,0,0,.35),0 0 0 1px rgba(255,0,0,.12);
+}
+
+.btn::after{
+  content:'';position:absolute;top:0;left:-100%;
+  width:50%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  animation:shine 3s ease-in-out infinite;
+}
+.btn-yt::after{animation-delay:1.5s;}
+@keyframes shine{
+  0%{left:-50%;}
+  15%{left:150%;}
+  100%{left:150%;}
+}
+
+.logos-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:24px;
+  margin-top:36px;
+  animation:fadeUp .8s .4s cubic-bezier(.22,1,.36,1) both;
+}
+.logo-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 16px;
+  border-radius:40px;
+  background:rgba(0,0,0,.03);
+  border:1px solid rgba(0,0,0,.06);
+  transition:background .2s,border-color .2s;
+}
+.logo-chip:hover{
+  background:rgba(0,0,0,.06);
+  border-color:rgba(0,0,0,.1);
+}
+.logo-chip img{
+  width:18px;height:18px;
+  border-radius:4px;object-fit:contain;
+}
+.logo-chip span{
+  font-size:12px;font-weight:600;color:#6B7280;
+  letter-spacing:.01em;
+}
+
+.micro{
+  margin-top:20px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  color:#C0C4CA;
+  letter-spacing:.05em;
+  animation:fadeUp .8s .5s cubic-bezier(.22,1,.36,1) both;
+}
+
+.disc{
+  position:relative;z-index:2;
+  text-align:center;
+  padding:20px 24px 32px;
+  max-width:480px;
+}
+.disc p{
+  font-size:10px;color:#C8CCD2;
+  max-width:440px;margin:0 auto;line-height:1.7;
+}
+
+.float{
+  position:fixed;bottom:16px;left:50%;transform:translateX(-50%);
+  z-index:50;display:none;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(12px);
+  border:1px solid #E5E7EB;
+  border-radius:14px;
+  padding:6px;gap:6px;
+  box-shadow:0 12px 40px rgba(0,0,0,.1);
+}
+.float a{
+  padding:10px 18px;border-radius:10px;
+  font-weight:700;font-size:12px;color:#fff;
+  display:flex;align-items:center;gap:7px;
+  white-space:nowrap;
+  transition:transform .12s;
+}
+.float a:active{transform:scale(.95);}
+.float a img{width:18px;height:18px;border-radius:4px;object-fit:contain;filter:brightness(0) invert(1);}
+.float .f-tg{background:#29A9EB;}
+.float .f-yt{background:#FF0000;}
+
+@media(max-width:600px){
+  .float{display:flex;}
+  body{padding-bottom:76px;}
+  .center{padding:60px 20px 40px;}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.jpg" alt="Telegram Logo" class="logo" />
-    <h1>Join TRADE WITH SUNIL</h1>
-    <p>🚀 Daily Accurate Calls<br>📈 Free Demo Access<br>🔐 Limited Members Only</p>
 
-    <div class="section-title">Master TRADING STRATEGIES</div>
-    <div class="benefit-text">Learn the TECHNIQUES & INTRADAY STOCK TIPS to Protect your Capital</div>
-    <div class="benefit-text">eLearn the PROCEDURES to Earn More while Investing Lesser Capital</div>
+<!-- Background layers -->
+<div class="grid-dots" aria-hidden="true"></div>
+<div class="blob blob-1" aria-hidden="true"></div>
+<div class="blob blob-2" aria-hidden="true"></div>
+<div class="blob blob-3" aria-hidden="true"></div>
+<div class="shapes" aria-hidden="true">
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<div class="lines" aria-hidden="true">
+  <div class="line-anim"></div>
+  <div class="line-anim"></div>
+  <div class="line-anim"></div>
+  <div class="line-anim"></div>
+  <div class="line-anim"></div>
+</div>
 
-    <a href="https://t.me/YourChannelUsername" target="_blank">
-      <button class="cta-btn">Join Free Channel</button>
-    </a>
+<!-- Content -->
+<div class="center">
 
-    <div class="countdown">Redirecting in <span id="timer">10</span> seconds...</div>
-
-    <p class="disclaimer">For educational purposes only. Not SEBI registered. DYOR.</p>
+  <div class="brand-logo">
+    <img
+      id="brandImg"
+      src="t2win.jpg"
+      alt="The Trading Mentor"
+      onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex';"
+    >
+    <div class="logo-fallback" id="logoFallback">Tr@de2Win</div>
   </div>
 
-  <script>
-    let countdown = 10;
-    const timerEl = document.getElementById("timer");
-    const redirectUrl = "https://t.me/YourChannelUsername";
+  <h1>Learn Gold trading the <span>right</span> way</h1>
+  <p>Free XAUUSD education — daily structure breakdowns, no signals, no fees.</p>
 
-    const interval = setInterval(() => {
-      countdown--;
-      timerEl.textContent = countdown;
-      if (countdown === 0) {
-        clearInterval(interval);
-        window.location.href = redirectUrl;
-      }
-    }, 1000);
-  </script>
+  <div class="ctas">
+    <a href="https://t.me/+aNLZvHI4qrU4Yjc1" class="btn btn-tg" onclick="trackClick('tg_hero')">
+      <img class="logo-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+      Join Telegram
+    </a>
+   
+  </div>
+
+  <div class="logos-row">
+    <a href="https://t.me/+vQvyaEf3cQU4M2M1" class="logo-chip" onclick="trackClick('tg_chip')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="">
+      <span>Telegram</span>
+    </a>
+    
+  </div>
+
+  <div class="micro">25K+ traders · Free to join</div>
+</div>
+
+<div class="disc">
+  <p>Risk disclosure: Trading forex, gold (XAUUSD), and other instruments involves substantial risk of loss. Content is for educational purposes only — not financial advice. No profits guaranteed. Trade only with capital you can afford to lose.</p>
+</div>
+
+<div class="float">
+  <a href="https://t.me/+vQvyaEf3cQU4M2M1" class="f-tg" onclick="trackClick('tg_float')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="">
+    TG
+  </a>
+ 
+</div>
+
+<script>
+function trackClick(l){console.log('CTA:',l);}
+</script>
 </body>
 </html>
